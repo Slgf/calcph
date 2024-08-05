@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADOR PH</title>
+    <link href="printaudit.la/images/favicon.ico" rel="shortcut icon">
+    <style>
+        /* Estilos para o layout do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+        }
+
+        /* Estilos para rolagem suave */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Estilos para o menu lateral */
+        .sidebar {
+            height: 100vh;
+            width: 200px;
+            background-color: #324E83; /* Cor azul da logo */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding-top: 2px; /* Altura do topo da barra lateral */
+            position: fixed;
+        }
+
+        /* Estilos para os links do menu */
+        .sidebar a {
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            display: block;
+            text-align: center;
+        }
+
+        .sidebar a:hover {
+            background-color: #ffd700; /* Cor dourada da logo */
+            color: #324E83; /* Cor azul da logo */
+        }
+
+        /* Legenda de Cores Oficiais ECI
+        #324E83 - ECI Blue I
+        #486CB4 - ECI Blue II
+        #F5333F - ECI Red
+        #414142 - Dark Gray
+        #939598 - Medium Gray
+        #C7C8CA - Light Gray
+	#0056b3 - Extra Blue
+        */
+
+        /* Estilos para o conteúdo principal */
+        .main-content {
+            margin-left: 200px; /* Espaço para o menu lateral */
+            padding: 0;
+            width: calc(100% - 200px); /* Ajusta a largura do conteúdo principal */
+        }
+
+        /* Estilos para o iframe */
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu lateral -->
+    <div class="sidebar">
+	<a href="https://printaudit.la/" target="_blank">
+	    <marquee loop="1" direction="down" width="120" height="80" behavior="slide" bgcolor=#fff>
+	      <img src="http://printaudit.la/images/PRINT2_peq.png" width="120" height="80">
+	    </marquee>
+	</a>
+	<center>_________________</center>
+	<br>
+	<a href="calcph.html#section1" target="content-frame"><b>INICIAR</b></a>
+	<a href="calcph.html#section2" target="content-frame"><b>CLIENTE</b></a>
+        <a href="calcph.html#section3" target="content-frame"><b>VALORES</b></a>
+        <a href="calcph.html#section4" target="content-frame"><b>CARGA CSV</b></a>
+        <a href="calcph.html#section5" target="content-frame"><b>CALC PH</b></a>
+        <center>_________________</center>
+	<br>
+        <a href="http://printaudit.la/guia" target="_blank"><b>PRINT AUDIT GUIA</b></a>
+        <a href="http://pala.printanistahub.com" target="_blank"><b>PRINTANISTA HUB</b></a>
+    </div>
+
+
+    <!-- Conteúdo principal com iframe -->
+    <div class="main-content">
+        <iframe src="calcph.html#section1" name="content-frame"></iframe>
+    </div>
+
+</body>
+</html>
